@@ -1,0 +1,9 @@
+<div class="menu">
+    <ul class="menu__container">
+        <!-- Loop through the navigation items -->
+        {{#foreach navigation}}
+          <li class="menu__list nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}" class="menu__link">{{label}}</a></li>
+        {{/foreach}}
+        <!-- End the loop -->
+    </ul>
+</div>

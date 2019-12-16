@@ -1,7 +1,45 @@
 .header{
-	
+	background: #fff;
+	text-align: center;
+	&__nav{
 
+	}	
+	&__inline{
+		display: inline-block;
+	}
+	&__left, &__middle, &__right{
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: -4px;
+	}
+	&__left, &__right{
+		width: 15%;
+	}
+	&__left{
+
+		&__int{
+
+		}
+	}
+	&__middle{
+		width: 70%;
+	}
+	&__right{
+
+	}
 	&__bg{
 		background: $color_three !important;
+	}
+	&__logo{
+		display: block;
+		width: 90%;
+		box-shadow: 1px 1px 1px rgba(#000000, 0.05);
+		padding: 1em 0;
+		border-radius: 0 0 1em 1em;
+		background: $color_three;
+		img{
+			max-width: 80%;
+			width: 100%;
+		}
 	}
 }

@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{!-- Styles'n'Scripts --}}
-    <link rel="stylesheet" type="text/css" href="{{asset "built/screenn.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
 
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
@@ -22,8 +21,27 @@
 
 </head>
 <body class="{{body_class}}">
+    {{!-- Start Header --}}
+    <header class="site-home-header header">
+        <div class="container">
+            {{> "site-nav"}}
 
-    <div class="site-wrapper">
+
+            {{!-- <div class="site-header-content">
+                <h1 class="site-title">
+                    {{#if @site.logo}}
+                        <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
+                    {{else}}
+                        {{@site.title}}
+                    {{/if}}
+                </h1>
+                <h2 class="site-description">{{@site.description}}</h2>
+            </div> --}}
+        </div>
+    </header>
+    {{!-- End Header --}}
+
+    <div class="container">
 
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
@@ -36,7 +54,7 @@
                     <a href="{{@site.url}}">Latest Posts</a>
                     {{#if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
                     {{#if @site.twitter}}<a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                    {{!-- <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a> --}}
                 </nav>
             </div>
         </footer>

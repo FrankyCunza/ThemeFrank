@@ -1,0 +1,16 @@
+.menu{
+
+	&__container{
+		margin: 0;
+	}
+	&__list{
+		display: inline-block;
+		margin-left: .7em;
+	}
+	&__link{
+		font-family: $font_one;
+		color: $color_three;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+}

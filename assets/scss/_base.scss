@@ -1,4 +1,59 @@
-body{
-          font-family: 'Dosis', sans-serif;
-          color: #ffffff;
+*{
+          font-family: $font_one;
 }
+body{
+          font-family: $font_one !important;
+          color: #ffffff;
+          background: #f9f9f9;
+}
+
+.container{
+          max-width: 1420px;
+          width: 100%;
+          padding: 0 1em;
+          margin: 0 auto;
+
+          @media screen and (max-width: 480px){
+                    padding: 0 1em;
+          }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

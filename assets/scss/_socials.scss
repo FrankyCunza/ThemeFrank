@@ -1,0 +1,19 @@
+.socials{
+	text-align: right;
+
+	&__link{
+		display: inline-block;
+		fill: $color_three;
+		margin-left: .2em;
+		svg{
+			height: 1.5em;
+		}
+		&--fb{
+
+		}
+		&--tw{
+			
+		}
+	}
+
+}
